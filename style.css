@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+/* Estilos da div que fica no topo com o título */
+.titulo{
+    grid-area: titulo;
+    background-color: rgb(3, 8, 123);
+}
+
+.txt_titulo{
+    padding-left: 950px;
+    padding-top: 50px;
+    font-family: Arial;
+    font-size: 32px;
+    color: white;
+}
+
+/*------------------------------------------------------*/
+
+/* Estilos da div que abarca o menu de opções de botões */
+.opcoes{
+    grid-area: opcoes;
+    background-color: rgb(158, 206, 236);
+    font-family: Arial;
+    color: rgb(3, 80, 132);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.trecho{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 5px;
+}
+
+.btns_op{
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+    padding-left: 40px;
+}
+
+.btns_op button {
+    border: none;
+    background-color: rgb(158, 206, 236);
+    color: rgb(3, 80, 132);
+    font-family: Arial;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.btns_op :hover{
+    background-color: rgb(3, 80, 132);
+    color: white;
+}
+
+/*------------------------------------------------------*/
+
+/* Estilos da div principal */
+.principal{
+    grid-area: principal;
+    background-color: rgb(167, 210, 236);
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+
+
+/*Estilos referentes a parte do cadastro de clientes*/
+.error{
+    color: red;
+}
+
+.cadastro_cliente{
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+
+.cabecalho_cadastro_cliente{
+    color: rgb(3, 80, 132);
+    font-family: Arial;
+    font-size: 18px;
+}
+
+hr {
+    border: 1px inset rgb(136, 196, 234);
+}
+
+.container_form_cliente{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 5px;
+}
+
+.submit{
+    padding-left: 147px;
+}
+
+.btn_submit_cliente button{
+    background-color:  rgb(3, 80, 132);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/*------------------------------------------------------*/
+
+/*Estilo refente a parte da consulta de clientes*/
+
+#externa_consulta_cliente h2{
+    color:  rgb(3, 80, 132);
+}   
+
+.tabela_padrao tr{
+    padding: 30px;
+}
+
+.tabela_padrao th{
+    color: white;
+    background-color: rgb(3, 80, 132);
+    padding: 10px;
+}
+
+.tabela_padrao td{
+    padding: 10px;
+}
+
+.tabela_padrao tbody{
+    color: black;
+    background-color: #cbd2e0;
+}
+.tabela_padrao tr:nth-child(even){
+    background:  #e7eaf0;
+}
+
+.tabela_padrao button{
+    border: none;
+    background-color: rgb(3, 80, 132);;
+    color: white;
+    font-family: Arial;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+}
+
+/*------------------------------------------------------*/
+
+.lista_veiculos {
+    text-align: left;
+}
+
+
+/*Estilo refente a parte de inserir de veículos*/
+
+.cabecalho_cadastro_veiculo h2{
+    color:  rgb(3, 80, 132);
+}
+
+.cadastro_veiculo{
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+
+.container_form_veiculo{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 5px;
+}
+
+
+/*------------------------------------------------------*/
+
+/*Estilo refente a parte da consulta de locações*/
+
+/*Código entra aqui*/
+
+/*------------------------------------------------------*/
+
+/*Estilo refente a parte de aluguel de veículos */
+
+
+
+/*------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------*/
+
+
+
+/*Estilo refente a parte da consulta de locações*/
+
+/*Código entra aqui*/
+
+/*------------------------------------------------------*/
+
+
+/*------------------------------------------------------*/
+
+/*grid responsável pela configuração geral da página*/
+.container{
+    display: grid;
+    grid-template-columns: 250px 200px 200px;
+    grid-template-rows: 130px 285px 314px;
+    grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "opcoes principal principal principal"
+        "opcoes principal principal principal";
+}
+
+/*------------------------------------------------------*/
